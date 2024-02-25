@@ -1,0 +1,162 @@
+body {
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  background-color: #f9f3f5; /* Soft pink background */
+  color: #4b4b4b; /* Dark gray text color */
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #ffffff; 
+  padding: 2%; /* Use percentage for padding */
+  position: absolute;
+  width: 100%;
+  font-family: Garamond, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 2vw; /* Use vw unit for font size */
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-content {
+  left: 0;
+  margin-left: 1vw; /* Use vw unit for margin */
+}
+
+.right-content {
+  right: 0;
+  margin-right: 4vw; /* Use vw unit for margin */
+}
+
+h3 {
+  margin-top: 5vh; /* Use vh unit for margin-top */
+  font-size: 2.5vw; /* Use vw unit for font size */
+  color: #896A7A;
+  font-family: Garamond, serif;
+}
+
+h4 {
+  font-size: 1.5vw; /* Use vw unit for font size */
+  color: #896A7A;
+  font-family: Garamond, serif;
+}
+
+p {
+  color: #341726;
+  font-size: 1vw; /* Use vw unit for font size */
+  margin-bottom: 1em;
+  font-family: Helvetica, sans-serif;
+}
+
+.meta {
+  font-size: 1vw; /* Use vw unit for font size */
+  color: #b0a4ab; /* Light lavender meta color */
+  margin-bottom: 1em;
+}
+
+img {
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  font-size: 5.5vw; /* Use vw unit for font size */
+  color: #5E3A4D; /* Rose pink headline color */
+  font-weight: 700;
+  z-index: 1;
+  white-space: nowrap;
+  font-family: Garamond, serif;
+  background-color: rgba(249, 243, 245, 0.7);
+  width: 100%;
+  text-align: center;
+  margin-top: 8vw;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: 12vw;
+}
+
+.grid-item {
+  padding: 2vw; /* Use vw unit for padding */
+}
+
+#maroon {
+  padding: 2vw; /* Use vw unit for padding */
+}
+
+#maroon-text {
+  padding: 2vw; /* Use vw unit for padding */
+}
+
+#maroon-img {
+  width: 100%;
+}
+
+#maroon-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.rounded-button {
+  display: inline-block;
+  padding: 1vw 2vw; /* Use vw unit for padding */
+  font-size: 1vw; /* Use vw unit for font size */
+  border-radius: 2.5vw; /* Use vw unit for border-radius */
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.primary-button {
+  background-color: #5E3A4D;
+  color: #fff;
+}
+
+.secondary-button {
+  background-color: #896A7A;
+  color: #ffffff;
+}
+
+.tertiary-button {
+  background-color: #ffffff;
+  color: #5E3A4D;
+  border: 0.2vw solid #5E3A4D; /* Use vw unit for border-width */
+}
+
+.rounded-button:hover {
+  background-color: #964c62;
+  color: #fff;
+}
+
+.external-link {
+  display: inline-block;
+  padding: 5vw 5vw; /* Use vw unit for padding */
+  color: #5E3A4D;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.external-link:hover {
+  color: #896A7A;
+}
