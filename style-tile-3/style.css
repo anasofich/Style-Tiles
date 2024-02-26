@@ -1,0 +1,344 @@
+@import url("https://use.typekit.net/qnn7bgp.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* THIS IS ALL meant for editing. You might want to do it differently, 
+name the variables differently, 
+use the fonts in other ways in the font hierarchy etc. */
+
+/* change these */
+:root {
+  --bg-color: #a5dff9;
+  --link-color: green;
+  --color-1: #f20775;
+  --color-2: #f2e41b;
+  --color-3: #f2d64b;
+  --color-4: #f27c38;
+  --color-5: #f25f29;
+  --color-6: #a5dff9;
+  --color-7: #d3cbe5;
+  --color-8: #fff8e7;
+
+  --primary-font: "ruddy", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
+  --third-font: "Poppins", serif;
+  --main-text-color: #000;
+
+  --white-space: 1rem;
+}
+
+html {
+  font-family: var(--primary-font);
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  background: conic-gradient(
+    #d3cbe5 90deg,
+
+    #fff8e7 90deg 180deg,
+
+    #d3cbe5 180deg 270deg,
+
+    #fff8e7 270deg
+  );
+
+  background-repeat: repeat;
+
+  background-size: 60px 60px;
+
+  background-position: top left;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+  transform: rotate(-10deg);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-1);
+}
+
+main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  color: var(--color-8);
+}
+
+main .column {
+  width: 50%;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  color: var(--color-1);
+  margin: 0.8rem 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.color-swatches {
+  display: flex;
+  gap: 20px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.swatches .color-swatch div {
+  height: 70px;
+  width: 70px;
+  border-radius: 100px;
+  text-align: center;
+  border: solid 2px var(--color-8);
+}
+
+.color-swatch-1 {
+  background-color: var(--color-1);
+}
+
+.color-swatch-2 {
+  background-color: var(--color-2);
+}
+
+.color-swatch-3 {
+  background-color: var(--color-3);
+}
+
+.color-swatch-4 {
+  background-color: var(--color-4);
+}
+
+.color-swatch-5 {
+  background-color: var(--color-5);
+}
+
+.color-swatch-6 {
+  background-color: var(--color-6);
+}
+
+.color-swatch-7 {
+  background-color: var(--color-7);
+}
+
+.color-swatch-8 {
+  background-color: var(--color-8);
+}
+
+.textures {
+  margin-top: 20px;
+}
+
+.textures ul {
+  display: flex;
+  gap: 10px;
+}
+
+.textures li {
+  height: 150px;
+  width: 120px;
+}
+
+.texture-swatch-1 {
+  background: url(./pic1.png) center center repeat;
+  background-size: cover;
+}
+
+.texture-swatch-2 {
+  background: url(./pic2.png) center center repeat;
+  background-size: cover;
+}
+
+.texture-swatch-3 {
+  background: url(./pic3.png) center center repeat;
+  background-size: cover;
+}
+
+.texture-swatch-4 {
+  background: url(./pic4.png) center center repeat;
+  background-size: cover;
+}
+
+.texture-swatch-5 {
+  background: url(./pic5.png) center center repeat;
+  background-size: cover;
+}
+
+.images ul {
+  flex-direction: column;
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 37px;
+  background: transparent;
+  border: solid 2px var(--color-8);
+  border-radius: 30px;
+  color: var(--color-8);
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.regular-button::after,
+.regular-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.regular-button::after {
+  width: 20px;
+  height: 1px;
+  background: var(--color-8);
+  transform: translateX(-3px);
+  margin-top: -1px;
+}
+
+.regular-button::before {
+  content: "";
+  transform: rotate(-135deg) translateX(50%);
+  width: 11px;
+  height: 11px;
+  background: transparent;
+  border-left: 1px solid var(--color-8);
+  border-bottom: 1px solid var(--color-8);
+  margin-top: -2px;
+}
+
+.regular-button:hover {
+  padding: 10px 60px 10px 14px;
+}
+
+.regular-button:hover::after,
+.regular-button:hover::before {
+  opacity: 1;
+  right: 20px;
+}
+
+.secondary-button:hover {
+  background-color: var(--color-8);
+  color: var(--color-1);
+}
+
+button.black {
+  border: solid 2px #000;
+  border-radius: 30px;
+  color: #000;
+}
+
+.regular-button.black::after {
+  background: #000;
+}
+
+.regular-button.black::before {
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.secondary-button.black:hover {
+  background-color: #000;
+  color: var(--color-1);
+}
+
+.h1-sample {
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: var(--primary-font);
+  color: var(--color-8);
+}
+
+.h2-sample {
+  font-family: var(--secondary-font);
+  font-size: 1.25rem;
+}
+
+p.typography-sample {
+  font-family: var(--third-font);
+  line-height: 1.5;
+  max-width: 960px;
+}
+
+a {
+  font-family: var(--secondary-font);
+  color: var(--color-1);
+  text-decoration: none;
+}
+
+.underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+.underline:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: var(--color-1);
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+p[class*="font-details-"] {
+  margin-top: 0.5rem;
+  margin-bottom: calc(2 * var(--white-space));
+  font-size: 0.75rem;
+  font-family: var(--secondary-font);
+  color: var(--color-4);
+}
+
+.adjectives ul {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+.adjectives ul {
+  flex-direction: column;
+}
